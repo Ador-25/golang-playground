@@ -8,6 +8,9 @@ import (
 	"time"
 )
 
+var gl_num int
+var gl_bool bool
+
 func main() {
 	// io
 	var read int
@@ -39,4 +42,18 @@ func main() {
 	s, q := calculator.SquareAndQube(number)
 	fmt.Println("square = ", s)
 	fmt.Println("qube = ", q)
+	fmt.Println(calculator.SquareAndQube(5))
+
+	// variable declares
+	var python, java, c bool
+	var i int
+	fmt.Println(i, python, java, c)
+	fmt.Println(gl_num, gl_bool)
+
+	var j, k, l = 1, true, "str"
+	fmt.Println(j, k, l)
+
+	var f, g int = 3, 4
+	fmt.Println(f, g)
+	
 }
